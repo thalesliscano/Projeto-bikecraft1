@@ -34,11 +34,13 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .menu a {
   text-decoration: none;
   color: black; /*Aqui é pra falar só com os "a" do flex*/
   margin-right: 100px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 500px);
@@ -47,17 +49,22 @@ img {
   gap: 50px;
   place-items: start;
 }
+
 .texto {
   flex-direction: column;
-  display: flex;
+  display: flex; /*Adicionei o align-items pra alinhar o "a" no na mesma direção do texto*/
+  align-items: end;
 }
+
 .grid .texto {
   /*Aqui é pra falar só com o a 1 coluna e 1 linha*/
   align-self: center;
 }
+
 .grid .texto p {
   text-align: end;
 }
+
 .grid .texto a {
   background-color: #ff0000;
   text-decoration: none;
@@ -74,10 +81,6 @@ img {
   align-self: center;
 }
 
-html footer p {
-  position: fixed;
-}
-
-a {
-  place-self: end;
+.rodape {
+  text-align: center;
 }

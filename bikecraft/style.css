@@ -1,0 +1,83 @@
+/* Estou reformulando oque eu fiz da primeira vez */
+body {
+  margin: 0px;
+  background-color: #f7f7f7;
+  font-family: Arial;
+  height: 1000px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1 {
+  margin: 60px;
+  text-align: center;
+}
+
+h2 {
+  text-align: end;
+}
+img {
+  max-width: 100%;
+  border-radius: 4px;
+  align-self: center; /*Aqui eu especifiquei a imagem que ta fora do grid, e ta na 2 coluna e linha.*/
+}
+
+.grid .descriçao h3 img {
+  max-width: 100%; /*Aqui eu especifiquei para mudar apenas a imagem dentro dos h3*/
+  width: 40px;
+  margin-right: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.menu a {
+  text-decoration: none;
+  color: black; /*Aqui é pra falar só com os "a" do flex*/
+  margin-right: 100px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  grid-template-rows: repeat(2, 500px);
+  justify-content: center;
+  gap: 50px;
+  place-items: start;
+}
+.texto {
+  flex-direction: column;
+  display: flex;
+}
+.grid .texto {
+  /*Aqui é pra falar só com o a 1 coluna e 1 linha*/
+  align-self: center;
+}
+.grid .texto p {
+  text-align: end;
+}
+.grid .texto a {
+  background-color: #ff0000;
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 4px;
+  justify-content: flex-end;
+}
+
+.grid h1 {
+  font-size: 64px;
+  color: #c6c6c6;
+  text-align: end;
+  align-self: center;
+}
+
+html footer p {
+  position: fixed;
+}
+
+a {
+  place-self: end;
+}
